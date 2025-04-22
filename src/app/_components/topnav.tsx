@@ -5,7 +5,7 @@ export function TopNav() {
                 
                 <div className="flex gap-5">
                     <a href="#" className=" text-white px-4 py-2 rounded hover:bg-gray-500">Home</a>
-                    <a href="#" className=" text-white px-4 py-2 rounded hover:bg-gray-500">Bonquet</a>
+                    <a href="#" className=" text-white px-4 py-2 rounded hover:bg-gray-500">Bouquet</a>
                     <a href="#" className=" text-white px-4 py-2 rounded hover:bg-gray-500">Flowers</a>
                     <a href="#" className=" text-white px-4 py-2 rounded hover:bg-gray-500">Orders</a>
                 </div>
