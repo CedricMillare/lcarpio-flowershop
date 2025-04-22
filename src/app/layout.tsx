@@ -2,6 +2,8 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
+import { TopNav } from "./_components/topnav";
+import { Footer } from "./_components/footer";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -19,7 +21,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.variable}`}>
-      <body>{children}</body>
+      <body className="bg-black text-white">
+        <TopNav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
