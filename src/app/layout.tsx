@@ -4,6 +4,7 @@ import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 import { TopNav } from "./_components/topnav";
 import { Footer } from "./_components/footer";
+import { SideNav } from "./_components/sidenav";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en" className={`${geist.variable}`}>
       <body className="bg-black text-white">
         <TopNav />
+        <SideNav />
         {children}
         <Footer />
       </body>
